@@ -14,7 +14,18 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@monorepo-example/app1/feature": ["libs/app1/feature/src/index.ts"],
+      "@monorepo-example/app1/feature-shell": [
+        "libs/app1/feature-shell/src/index.ts"
+      ],
+      "@monorepo-example/shared/data-access-cat-status": [
+        "libs/shared/data-access-cat-status/src/index.ts"
+      ],
+      "@monorepo-example/shared/ui-button": [
+        "libs/shared/ui-button/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
