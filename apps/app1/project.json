@@ -1,4 +1,5 @@
 {
+  "name": "app1",
   "projectType": "application",
   "sourceRoot": "apps/app1/src",
   "prefix": "monorepo-example",
@@ -75,7 +76,7 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/app1"],
+      "outputs": ["{workspaceRoot}/coverage/apps/app1"],
       "options": {
         "jestConfig": "apps/app1/jest.config.ts",
         "passWithNoTests": true

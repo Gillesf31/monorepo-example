@@ -4,11 +4,7 @@
   "projects": {
     "app1": "apps/app1",
     "app1-e2e": "apps/app1-e2e",
-    "app1-feature": "libs/app1/feature",
-    "app1-feature-shell": "libs/app1/feature-shell",
     "app2": "apps/app2",
-    "app2-e2e": "apps/app2-e2e",
-    "shared-data-access-cat-status": "libs/shared/data-access-cat-status",
-    "shared-ui-button": "libs/shared/ui-button"
+    "app2-e2e": "apps/app2-e2e"
   }
 }

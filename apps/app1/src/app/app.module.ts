@@ -1,19 +1,11 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { Route, RouterModule } from '@angular/router';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
 
-import { AppComponent } from './app.component';
-
-const routes: Route[] = [
-  {
-    path: '',
-    loadChildren: () => import('@monorepo-example/app1/feature-shell').then(m => m.App1FeatureShellModule)
-  }
-];
+import {AppComponent} from './app.component';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, RouterModule.forRoot(routes)],
+  imports: [BrowserModule],
   providers: [],
   bootstrap: [AppComponent],
 })
