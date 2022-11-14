@@ -14,7 +14,16 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@monorepo-example/app1/data-access": [
+        "libs/app1/data-access/src/index.ts"
+      ],
+      "@monorepo-example/app1/feature": ["libs/app1/feature/src/index.ts"],
+      "@monorepo-example/app1/feature-shell": [
+        "libs/app1/feature-shell/src/index.ts"
+      ],
+      "@monorepo-example/app1/ui": ["libs/app1/ui/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

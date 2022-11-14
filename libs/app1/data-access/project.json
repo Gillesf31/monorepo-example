@@ -1,0 +1,27 @@
+{
+  "name": "app1-data-access",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/app1/data-access/src",
+  "prefix": "monorepo-example",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/app1/data-access/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/app1/data-access/**/*.ts",
+          "libs/app1/data-access/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": ["scope:app1", "type:data-access"]
+}
