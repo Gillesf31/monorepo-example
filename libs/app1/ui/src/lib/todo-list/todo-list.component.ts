@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TodoItemComponent } from '../todo-item/todo-item.component';
+import { TodoItemModel } from '@monorepo-example/app1/util';
 
 @Component({
   selector: 'monorepo-example-todo-list',
@@ -8,8 +9,6 @@ import { TodoItemComponent } from '../todo-item/todo-item.component';
   imports: [CommonModule, TodoItemComponent],
   templateUrl: './todo-list.component.html',
 })
-export class TodoListComponent implements OnInit {
-  constructor() {}
-
-  ngOnInit(): void {}
+export class TodoListComponent {
+  @Input() todoList!: TodoItemModel[] | null;
 }

@@ -1,2 +1,3 @@
-<monorepo-example-todo-list></monorepo-example-todo-list>
-{{ todoList$ | async | json }}
+<monorepo-example-todo-list
+  [todoList]="todoList$ | async"
+></monorepo-example-todo-list>

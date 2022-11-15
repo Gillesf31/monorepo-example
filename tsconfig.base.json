@@ -22,7 +22,8 @@
       "@monorepo-example/app1/feature-shell": [
         "libs/app1/feature-shell/src/index.ts"
       ],
-      "@monorepo-example/app1/ui": ["libs/app1/ui/src/index.ts"]
+      "@monorepo-example/app1/ui": ["libs/app1/ui/src/index.ts"],
+      "@monorepo-example/app1/util": ["libs/app1/util/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
