@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { App1DataAccessModule } from '../app1-data-access.module';
 import { Observable, of } from 'rxjs';
-import { TodoItemModel } from '../../../../util/src/lib/models/todo-list.model';
+import { TodoItemModel } from '@monorepo-example/app1/util';
 
 @Injectable({ providedIn: App1DataAccessModule })
 export class TodoListService {

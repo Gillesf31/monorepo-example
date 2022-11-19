@@ -14,11 +14,11 @@
             "depConstraints": [
               {
                 "sourceTag": "scope:app1",
-                "onlyDependOnLibsWithTags": ["type:feature", "type:data-access", "type:ui", "type:util"]
+                "onlyDependOnLibsWithTags": ["scope:app1"]
               },
               {
                 "sourceTag": "scope:app2",
-                "onlyDependOnLibsWithTags": ["type:feature", "type:data-access", "type:ui", "type:util"]
+                "onlyDependOnLibsWithTags": ["scope:app2"]
               },
               {
                 "sourceTag": "type:feature",

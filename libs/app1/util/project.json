@@ -23,5 +23,5 @@
       }
     }
   },
-  "tags": ["scope:app1", "type:ui"]
+  "tags": ["scope:app1", "type:util"]
 }
