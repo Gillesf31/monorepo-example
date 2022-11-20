@@ -24,6 +24,6 @@
       }
     }
   },
-  "tags": [],
+  "tags": ["scope:app2","type:app"],
   "implicitDependencies": ["app2"]
 }
