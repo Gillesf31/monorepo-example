@@ -1,0 +1,14 @@
+<div
+  class="my-2 flex flex-row border border-amber-500 rounded-md"
+  *ngIf="todoItem"
+>
+  <p class="pl-2" [ngClass]="todoItem.done ? 'line-through' : ''">
+    {{ todoItem.title }}
+  </p>
+  <input
+    class="ml-2"
+    type="checkbox"
+    [checked]="todoItem.done"
+    [value]="todoItem.done"
+  />
+</div>

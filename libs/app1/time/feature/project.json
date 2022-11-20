@@ -1,0 +1,27 @@
+{
+  "name": "app1-time-feature",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/app1/time/feature/src",
+  "prefix": "monorepo-example",
+  "targets": {
+    "test": {
+      "executor": "@angular-devkit/build-angular:karma",
+      "options": {
+        "main": "libs/app1/time/feature/src/test.ts",
+        "tsConfig": "libs/app1/time/feature/tsconfig.spec.json",
+        "karmaConfig": "libs/app1/time/feature/karma.conf.js"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/app1/time/feature/**/*.ts",
+          "libs/app1/time/feature/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": ["scope:app1", "type:feature"]
+}

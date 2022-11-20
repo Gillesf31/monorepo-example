@@ -15,15 +15,28 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@monorepo-example/app1/data-access": [
-        "libs/app1/data-access/src/index.ts"
-      ],
-      "@monorepo-example/app1/feature": ["libs/app1/feature/src/index.ts"],
       "@monorepo-example/app1/feature-shell": [
         "libs/app1/feature-shell/src/index.ts"
       ],
-      "@monorepo-example/app1/ui": ["libs/app1/ui/src/index.ts"],
-      "@monorepo-example/app1/util": ["libs/app1/util/src/index.ts"]
+      "@monorepo-example/app1/time/data-access": [
+        "libs/app1/time/data-access/src/index.ts"
+      ],
+      "@monorepo-example/app1/time/feature": [
+        "libs/app1/time/feature/src/index.ts"
+      ],
+      "@monorepo-example/app1/time/util": ["libs/app1/time/util/src/index.ts"],
+      "@monorepo-example/app1/todo-list/data-access": [
+        "libs/app1/todo-list/data-access/src/index.ts"
+      ],
+      "@monorepo-example/app1/todo-list/feature": [
+        "libs/app1/todo-list/feature/src/index.ts"
+      ],
+      "@monorepo-example/app1/todo-list/ui": [
+        "libs/app1/todo-list/ui/src/index.ts"
+      ],
+      "@monorepo-example/app1/todo-list/util": [
+        "libs/app1/todo-list/util/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]

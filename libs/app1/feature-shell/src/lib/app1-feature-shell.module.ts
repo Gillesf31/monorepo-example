@@ -6,4 +6,4 @@ import { app1FeatureShellRoutes } from './lib.routes';
 @NgModule({
   imports: [CommonModule, RouterModule.forChild(app1FeatureShellRoutes)],
 })
-export class App1FeatureShellModule {}
+export class App1TodoListFeatureShellModule {}

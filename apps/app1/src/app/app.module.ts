@@ -9,7 +9,7 @@ const routes: Routes = [
     path: '',
     loadChildren: () =>
       import('@monorepo-example/app1/feature-shell').then(
-        (m) => m.App1FeatureShellModule
+        (m) => m.App1TodoListFeatureShellModule
       ),
   },
 ];

@@ -1,0 +1,27 @@
+{
+  "name": "app1-time-data-access",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/app1/time/data-access/src",
+  "prefix": "monorepo-example",
+  "targets": {
+    "test": {
+      "executor": "@angular-devkit/build-angular:karma",
+      "options": {
+        "main": "libs/app1/time/data-access/src/test.ts",
+        "tsConfig": "libs/app1/time/data-access/tsconfig.spec.json",
+        "karmaConfig": "libs/app1/time/data-access/karma.conf.js"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/app1/time/data-access/**/*.ts",
+          "libs/app1/time/data-access/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": ["scope:app1", "type:data-access"]
+}

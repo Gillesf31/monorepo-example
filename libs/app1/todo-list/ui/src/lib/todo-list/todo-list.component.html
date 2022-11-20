@@ -1,0 +1,10 @@
+<div>
+  <h1>Todo List</h1>
+  <ul class="w-36">
+    <li *ngFor="let todoItem of todoList">
+      <monorepo-example-todo-item
+        [todoItem]="todoItem"
+      ></monorepo-example-todo-item>
+    </li>
+  </ul>
+</div>
