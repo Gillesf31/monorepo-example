@@ -1,15 +1,25 @@
-import { Injectable } from '@angular/core';
-import { App1TodoListDataAccessModule } from '../app1-todo-list-data-access.module';
-import { Observable, of } from 'rxjs';
-import { TodoItemModel } from '@monorepo-example/app1/todo-list/util';
+import {Injectable} from '@angular/core';
+import {App1TodoListDataAccessModule} from '../app1-todo-list-data-access.module';
+import {map, Observable, of, tap} from 'rxjs';
+import {TodoItemModel} from '@monorepo-example/app1/todo-list/util';
+import {HttpClient} from "@angular/common/http";
 
-@Injectable({ providedIn: App1TodoListDataAccessModule })
+@Injectable({providedIn: App1TodoListDataAccessModule})
 export class TodoListService {
+  constructor(private readonly http: HttpClient) {
+  }
+
   getTodoList(): Observable<TodoItemModel[]> {
-    return of([
-      { id: 1, title: 'Todo 1', done: true },
-      { id: 2, title: 'Todo 2', done: false },
-      { id: 3, title: 'Todo 3', done: true },
-    ]);
+    return this.http.get<any>('https://jsonplaceholder.typicode.com/users/1/todos')
+      .pipe(
+        tap(console.warn),
+        map(todoList =>
+          todoList.map((todoItem: { id: any; title: any; completed: any; }) => ({
+              id: todoItem.id,
+              title: todoItem.title,
+              done: todoItem.completed
+            } as TodoItemModel))
+        )
+      );
   }
 }
